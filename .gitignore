@@ -1,0 +1,19 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+/target/
+/log/
+nbactions.xml
+
+# IntelliJ IDEA #
+*.iml
+.idea/
+.DS_STORE
+# Markdown Editor Metadata #
+
+.Ulysses*
+/manual/node_modules
+/manual/_book
