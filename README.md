@@ -8,7 +8,7 @@ configuration:
 * pf4j 2.1.0
 
 
-IntelliJ on Java 9.0.4 will compile the problem and
+IntelliJ on Java 9.0.4 will compile the project and
 run the demo.Main#main method without problems, so I would guess this is
 somewhat related to maven/maven-compiler-plugin.
 
