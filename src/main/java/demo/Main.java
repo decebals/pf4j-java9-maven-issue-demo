@@ -1,14 +1,14 @@
 package demo;
 
-import org.pf4j.*;
+import org.pf4j.DefaultPluginManager;
+import org.pf4j.PluginManager;
 
 public class Main {
 
-  private static final PluginManager pluginManager = new DefaultPluginManager();
-
-  public static void main(String[] args) {
-    Plugin plugin = (Plugin) pluginManager.getExtensions(ExtensibleInterface.class).get(0);
-    plugin.demoMethod();
-  }
+    public static void main(String[] args) {
+        PluginManager pluginManager = new DefaultPluginManager();
+        ExtensibleInterface extension = pluginManager.getExtensions(ExtensibleInterface.class).get(0);
+        extension.demoMethod();
+    }
 
 }
